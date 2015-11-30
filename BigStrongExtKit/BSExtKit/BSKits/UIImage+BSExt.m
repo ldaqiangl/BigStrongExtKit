@@ -477,7 +477,7 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
 
 
 
-+ (UIImage *)imageFixOrientation:(UIImage *)srcImg {
++ (UIImage *)imageFixOrientation_Ext:(UIImage *)srcImg {
     if (srcImg.imageOrientation == UIImageOrientationUp) return srcImg;
     CGAffineTransform transform = CGAffineTransformIdentity;
     switch (srcImg.imageOrientation) {
@@ -549,7 +549,7 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
 
 
 
-- (UIImage *)imageBlurredWithRadius:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor {
+- (UIImage *)imageBlurredWithRadius_Ext:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor {
     //image must be nonzero size
     if (floorf(self.size.width) * floorf(self.size.height) <= 0.0f) return self;
     

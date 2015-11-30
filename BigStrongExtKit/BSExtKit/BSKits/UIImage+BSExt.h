@@ -134,7 +134,7 @@
 /**
  *  旋转生成图片方向为正上正下方向
  */
-+ (UIImage *)imageFixOrientation:(UIImage *)srcImg;
++ (UIImage *)imageFixOrientation_Ext:(UIImage *)srcImg;
 
 
 /**
@@ -146,6 +146,6 @@
  *
  *  @return <#return value description#>
  */
-- (UIImage *)imageBlurredWithRadius:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor;
+- (UIImage *)imageBlurredWithRadius_Ext:(CGFloat)radius iterations:(NSUInteger)iterations tintColor:(UIColor *)tintColor;
 
 @end
